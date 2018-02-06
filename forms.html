@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Forms</title>
+	<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.css">
+	<script src="bootstrap/js/jquery.min.js"></script>
+	<script src="bootstrap/js/bootstrap.js"></script>
+	<style type="text/css">
+	.navbar
+	{
+		background-color: pink;
+		border:0;
+		font-size: 18px;
+		line-height: 1px;
+		letter-spacing: 2px;
+		border-radius: 5px;
+		border-color: purple;
+	}	
+	.navbar-default .navbar-nav > li > a
+	{
+		color: blue;
+	}
+	.navbar-default .navbar-nav > li.active > a
+	{
+		color: red;
+		background-color: teal;
+	}
+	}	
+	.navbar-default .navbar-nav > li > a:hover
+	{
+		color: blue;
+		background-color: orange;
+	}
+	</style>
+</head>
+<body>
+	<hr>
+	<nav class="navbar navbar-default">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="#">www.top.com</a>
+			</div>
+			<div class="collapse navbar-collapse" id="myNavbar">
+				<ul class="nav navbar-nav">
+					<li class="active"><a href="#">Home</a></li>
+					<li><a href="#">Services</a></li>
+					<li><a href="#">Contact Us</a></li>
+					<li><a href="#">Pictures</a></li>
+				</ul>
+				<ul class="nav navbar-nav navbar-right">
+					<li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+					<li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+	<div class="row">
+		<div class="col-sm-6 col-sm-offset-3">
+			<h2 class="text-center text-primary">Register here</h2>
+			<form>
+				<div class="form-group">
+					<input type="text" class="form-control" placeholder="Enter your Names" class="required">
+				</div>
+				<div class="form-group">
+					<input type="email" class="form-control" placeholder="Enter your Email address">
+				</div>
+				<div class="form-group">
+					<input type="date" class="form-control" placeholder="Enter your D.O.B.">
+				</div>
+				<div class="form-group">
+					<input type="password" class="form-control" placeholder="Enter your Password">
+				</div>
+				<div class="form-group">
+					<select class="form-control">
+						<option>Primary School</option>
+						<option>Secondary School</option>
+						<option>College</option>
+						<option>University</option>
+					</select>
+				</div>
+				<div class="radio">
+					<label><input type="radio" name="optradio">MALE</label>
+				</div>
+				<div class="radio">
+					<label><input type="radio" name="optradio">FEMALE</label>
+				</div>
+				<div class="radio disabled">
+					<label><input type="radio" name="optradio" disabled>OTHER</label>
+				</div>
+				<button class="btn btn-success btn-block">Sign Up</button>
+			</form>
+		</div>
+	</div>
+</body>
+</html>
