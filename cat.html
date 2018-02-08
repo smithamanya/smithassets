@@ -21,12 +21,18 @@ h3
 	color: blue;
 	text-align: center;
 }
-img
+.img
 {
 	height: 300px;
 	width: 100%;
 	margin-left:none;
-	margin-right: none; 
+	margin-right: 0 auto;
+	clear: both; 
+}
+.gall
+{
+	background-color: purple;
+	clear: both;
 }
 .img1, img
 {
@@ -76,43 +82,43 @@ img
 	</nav>
 	<div class="container">
 		<div class="row">
-			<div class="carousel slide" data-ride="carousel" class="col-sm-8 col-md-8">
+			<div class="carousel slide" data-ride="carousel" class="col-sm-8 col-md-12">
 			<h3>Slide</h3>
 				<!-- Indicators -->
 				<ol class="carousel-indicators">
 					<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-					<li data-target="#myCarousel" data-slide-to="1"></li>
-					<li data-target="#myCarousel" data-slide-to="2"></li>
-					<li data-target="#myCarousel" data-slide-to="3"></li>
-					<li data-target="#myCarousel" data-slide-to="4"></li>
-					<li data-target="#myCarousel" data-slide-to="5"></li>
-					<li data-target="#myCarousel" data-slide-to="6"></li>
+					<li data-target="#myCarousel" data-slide-to="1" class="item"></li>
+					<li data-target="#myCarousel" data-slide-to="2" class="item"></li>
+					<li data-target="#myCarousel" data-slide-to="3" class="item"></li>
+					<li data-target="#myCarousel" data-slide-to="4" class="item"></li>
+					<li data-target="#myCarousel" data-slide-to="5" class="item"></li>
+					<li data-target="#myCarousel" data-slide-to="6" class="item"></li>
 				</ol>
 
 				<!-- Wrapper for slides -->
 				<div class="carousel-inner" role="listbox">
-					<div class="item active">
+					<div class="item active img">
 						<img src="photos/car.jpg" alt="Carsmith">
 					</div>
 
-					<div class="item">
+					<div class="item img">
 						<img src="photos/hse.jpg" alt="Jerry Home">
 					</div>
 
-					<div class="item">
+					<div class="item img">
 						<img src="photos/lion.jpg" alt="Smith lion">
 					</div>
 
-					<div class="item">
+					<div class="item img">
 						<img src="photos/waterfall.jpg" alt="waterfall">
 					</div>
-					<div class="item">
+					<div class="item img">
 						<img src="photos/fud.jpeg" alt="Food">
 					</div>
-					<div class="item">
+					<div class="item img">
 						<img src="photos/dinner.jpg" alt="Dinner">
 					</div>
-					<div class="item">
+					<div class="item img">
 						<img src="photos/cool grid.jpg" alt="Cool grid">
 					</div>
 				</div>
@@ -144,7 +150,7 @@ img
 					<li>Currently, Smith works with Google Company as the Systems Engineer.</li>
 				</ul>
 			</div>
-			<div class="col-sm-8 col-sm-offset-2 col-md-8 col-xs-12" id="Gall" id="Gallery">
+			<div class="col-sm-8 col-sm-offset-2 col-md-8 col-xs-12 gall" id="Gallery">
 				<h3>Gallery</h3>
 				<div class="col-sm-4" class="img1"><img src="photos/2pizzasontable.jpeg"></div>
 				<div class="col-sm-4" class="img1"><img src="photos/gal.jpg"></div>
